@@ -10,6 +10,10 @@ body {
   @apply bg-cream text-dark-900;
 }
 
+.font-hero {
+  font-family: 'Akzidenz-Grotesk', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 /* Scrollbar minimal */
 ::-webkit-scrollbar {
   width: 6px;

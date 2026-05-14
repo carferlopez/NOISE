@@ -5,31 +5,31 @@ export default function Home() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-4">
       {/* Hero */}
-      <section className="pt-0 pb-0 md:pt-0 md:pb-0">
-        <div className="mt-0 w-full flex justify-center mb-2">
-          <div className="w-full max-w-[1024px]">
-            <img src="/2.svg" alt="Navigation Layout" className="w-full h-auto block" />
-          </div>
-        </div>
+      <section className="py-20 md:py-28 text-center">
+        <h1 className="font-hero font-black leading-tight mb-10" style={{ fontSize: 'clamp(2.5rem, 6vw, 5.5rem)' }}>
+          <span className="block">
+            <span className="text-dark-900">No More </span>
+            <span className="text-coral">Bullshit</span>
+          </span>
+          <span className="block text-dark-900">in Health</span>
+        </h1>
 
-        <div className="max-w-3xl mx-auto text-center mt-8">
-          <p className="text-lg md:text-xl text-dark-700 mb-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-dark-700 mb-10">
             En salud, nutrición y fitness hay demasiado ruido, modas y consejos
-            contradictorios. NOISE te dice qué es BS y cuál es la{' '}
-            <strong className="text-dark-900">dosis mínima efectiva</strong> que
-            la ciencia realmente respalda.
+            contradictorios. Noise te dice qué es Bullshit y cuál es la dosis mínima efectiva que la ciencia realmente respalda.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
             <Link
               href="/detector"
-              className="px-8 py-4 bg-coral text-white font-bold rounded-lg hover:bg-coral-dark transition text-lg"
+              className="text-center px-5 py-3 bg-coral text-white font-bold rounded-lg text-base transition-all duration-200 hover:scale-105 hover:bg-coral-dark"
             >
               Probar el Detector de BS
             </Link>
             <Link
               href="/protocolos"
-              className="px-8 py-4 bg-white text-dark-900 font-bold rounded-lg hover:bg-cream-dark transition text-lg border border-dark-300"
+              className="text-center px-5 py-3 bg-white text-dark-900 font-bold rounded-lg text-base border border-dark-300 transition-all duration-200 hover:scale-105 hover:bg-cream-dark hover:border-dark-500"
             >
               Ver Protocolos MED
             </Link>
@@ -121,12 +121,12 @@ function FeatureCard({
 }) {
   return (
     <Link href={href}>
-      <div className="bg-white border border-dark-200 rounded-xl p-8 hover:border-coral transition group cursor-pointer h-full">
+      <div className="bg-white border border-dark-200 rounded-xl p-8 hover:bg-dark-900 hover:border-dark-900 transition group cursor-pointer h-full">
         <div className="mb-4">{icon}</div>
-        <h3 className="text-xl font-bold mb-3 group-hover:text-coral transition">
+        <h3 className="text-xl font-bold mb-3 text-dark-900 group-hover:text-white transition">
           {title}
         </h3>
-        <p className="text-dark-600">{description}</p>
+        <p className="text-dark-600 group-hover:text-dark-300 transition">{description}</p>
       </div>
     </Link>
   )

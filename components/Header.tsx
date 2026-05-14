@@ -16,13 +16,13 @@ export default function Header() {
 
   return (
     <header className="border-b border-dark-200 bg-cream/80 backdrop-blur-md sticky top-0 z-50">
-      <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+      <div className="max-w-5xl mx-auto px-4 h-20 flex items-center justify-between gap-4">
         <Link href="/" className="font-bold text-xl flex items-center gap-2">
           <img src="/logo-inicio.png" alt="NOISE Logo" className="h-16 w-auto" />
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex flex-1 justify-center items-center gap-6">
+        <nav className="hidden md:flex flex-1 justify-center items-center gap-6 translate-y-1">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
@@ -34,7 +34,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3 translate-y-1">
           <Link
             href="/login"
             className="flex items-center gap-2 rounded-full border border-dark-200 px-4 py-2 text-dark-700 hover:bg-coral hover:text-white hover:border-coral transition text-sm font-semibold"

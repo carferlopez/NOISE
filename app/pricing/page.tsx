@@ -31,7 +31,6 @@ export default function PricingPage() {
           features={[
             'Detector de BS ilimitado',
             'Protocolos MED detallados con fuentes',
-            'Newsletter semanal "La Señal"',
             'Historial de consultas',
             'Sin publicidad',
             'Soporte prioritario',
