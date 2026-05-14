@@ -19,21 +19,6 @@ export default function Home() {
             <strong className="text-dark-900">dosis mínima efectiva</strong> que
             la ciencia realmente respalda.
           </p>
-
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Link
-              href="/detector"
-              className="px-8 py-4 bg-coral text-white font-bold rounded-lg hover:bg-coral-dark transition text-lg"
-            >
-              Probar el Detector de BS
-            </Link>
-            <Link
-              href="/protocolos"
-              className="px-8 py-4 bg-white text-dark-900 font-bold rounded-lg hover:bg-cream-dark transition text-lg border border-dark-300"
-            >
-              Ver Protocolos MED
-            </Link>
-          </div>
         </div>
       </section>
 
