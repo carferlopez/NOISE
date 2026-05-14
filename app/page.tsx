@@ -5,35 +5,29 @@ export default function Home() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-4">
       {/* Hero */}
-      <section className="pt-0 pb-0 md:pt-0 md:pb-0">
-        <div className="mt-0 w-full flex justify-center mb-2">
-          <div className="w-full max-w-[1024px]">
-            <img src="/2.svg" alt="Navigation Layout" className="w-full h-auto block" />
-          </div>
-        </div>
+      <section className="pt-16 pb-12 md:pt-24 md:pb-16">
+        <h1 className="font-black tracking-tighter leading-[0.82] text-coral select-none mb-8 text-center" style={{ fontSize: 'clamp(3rem, 18vw, 10rem)' }}>
+          <span className="relative inline-block">
+            <span aria-hidden className="absolute left-0 top-0 text-coral/25" style={{ transform: 'translateY(-0.31em)' }}>N</span>
+            <span aria-hidden className="absolute left-0 top-0 text-coral/50" style={{ transform: 'translateY(-0.16em)' }}>N</span>
+            <span className="relative">N</span>
+          </span>
+          OISE
+        </h1>
 
-        <div className="max-w-3xl mx-auto text-center mt-8">
-          <p className="text-lg md:text-xl text-dark-700 mb-4">
+        <div className="h-2 bg-coral my-6 md:my-8 max-w-xs mx-auto" />
+
+        <p className="text-base md:text-lg font-bold uppercase tracking-[0.18em] text-dark-900 mb-6 md:mb-8 text-center">
+          No more bullshit in health.
+        </p>
+
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-lg md:text-xl text-dark-700 mb-8">
             En salud, nutrición y fitness hay demasiado ruido, modas y consejos
             contradictorios. NOISE te dice qué es BS y cuál es la{' '}
             <strong className="text-dark-900">dosis mínima efectiva</strong> que
             la ciencia realmente respalda.
           </p>
-
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Link
-              href="/detector"
-              className="px-8 py-4 bg-coral text-white font-bold rounded-lg hover:bg-coral-dark transition text-lg"
-            >
-              Probar el Detector de BS
-            </Link>
-            <Link
-              href="/protocolos"
-              className="px-8 py-4 bg-white text-dark-900 font-bold rounded-lg hover:bg-cream-dark transition text-lg border border-dark-300"
-            >
-              Ver Protocolos MED
-            </Link>
-          </div>
         </div>
       </section>
 
